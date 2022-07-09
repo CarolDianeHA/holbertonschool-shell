@@ -1,0 +1,2 @@
+#!/bin/bashi
+perl -ne 'printf if $. %2!=0'
