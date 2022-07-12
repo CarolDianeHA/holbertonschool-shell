@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 # This script is displaying Best School 10 times using while loop.
 count=0
-until false
+until [ $count -eq 10 ]
 do
-  ((count++))
-  if [[ $count -eq 10  ]]
-    then
-        continue
-    elif [[ $count -ge 10 ]]
-    then
-        break
-  fi
   echo "Best School"
+  ((count ++))
 done
